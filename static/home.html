@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <link href="static/css/my-socnet-style.css" rel="stylesheet" type="text/css"/>
+        <title>Home - SocNet</title>
+    </head>
+    <body >
+    <div class="container">
+
+        <div id="container">
+            <a href="principal.html">Principal</a> |   <a href="Cámara">Cámara</a>  |<a href="Producto">Producto</a>   | <a href="Contacto">Contacto</a>  
+            <h1>Hi, How are you?</h1>
+            <div>
+                <form action="processHome" method="post" name="home">
+                    <label for="message">Say something:</label>
+					<div class="inputs">
+
+                    <<input id="message" name="message" required="true" size="80" maxlength="128" type="text" />
+                       <input id="last" name="last"  type="hidden" />
+					</div>
+
+
+					<div class="inputs">
+                        <input id="post_submit" name="post_submit" type="submit" value="Post!"/>
+					</div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

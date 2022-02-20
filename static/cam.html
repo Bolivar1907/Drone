@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CAMARA/cam.css">
+    <title>Cámara</title>
+    <style>
+        #img{
+            display: none;
+        }
+    </style>
+    <style>
+        #img2{
+            display: none;
+        }
+    </style>
+    <style>
+        #img1{
+            display: none;
+        }
+    </style>
+    <style>
+        #img22{
+            display: none;
+        }
+    </style>
+    <style>
+        #video{
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="contenedor" onload="startTime()">
+    <div class="nombre">
+        <h1 >CiberDrone</h1>
+        
+    </div>
+    <div class="BGeneral">
+        <div class="botones">
+            <button id="boton" onclick="mostrar();" color="blue"><font size="4">Comenzar transmisión </font></button><br>
+            <button id="boton2" onclick="ocultar();"><font size="4">Detener transmisión </font></button>
+        </div>
+        
+        <div id="img2">
+            <img src="CAMARA/botonplay.png" width="75px" >
+        </div>
+        
+        <div id="img">
+            <img src="CAMARA/alarmaverde.png" width="75px" >
+        </div>
+    
+    
+        <script>
+            function mostrar(){
+                document.getElementById('img').style.display = 'block';
+                document.getElementById('img2').style.display = 'none';
+                document.getElementById('video').style.display='block';
+    
+            }
+    
+            function ocultar(){
+                document.getElementById('img').style.display = 'none';
+                document.getElementById('img2').style.display = 'block';
+                document.getElementById('video').style.display='none';
+            }
+        </script>
+    </div>
+    
+    
+    <div class="blanco"></div>
+        <div id="video">
+            
+            <iframe width=100% height=100% src="https://www.youtube.com/embed/NggC5XYyc7A" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                
+                
+        </div >
+    
+      
+    <div class="conteo">
+        <b><font color="#ccd6f6">Conteo de Perritos: </font>  </b>
+
+
+
+    </div>
+    <div class="EncenApag">
+        <div class="botones">
+            <button id="boton1" width=100% onclick="mostrar2();"><font size="4">Encender Drone</font> </button><br>
+            <button id="boton22" onclick="ocultar2();"><font size="4">Apagar Drone</font> </button>
+        </div>
+        
+        <div id="img22">
+            <img src="CAMARA/botonplay.png" width="75px" >
+        </div>
+        
+        <div id="img1">
+            <img src="CAMARA/alarmaverde.png" width="75px" >
+        </div>
+    
+    
+        <script>
+            function mostrar2(){
+                document.getElementById('img1').style.display = 'block';
+                document.getElementById('img22').style.display = 'none';
+                
+    
+            }
+    
+            function ocultar2(){
+                document.getElementById('img1').style.display = 'none';
+                document.getElementById('img22').style.display = 'block';
+                
+            }
+        </script>
+    </div>
+    <div class="logo">
+        <img src="CAMARA/Logo.png" width="150%"/>
+        
+
+    </div>
+    <div class="return">
+        <a href="principal.html" class="btn-neon">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <b>Regresar</b> 
+        </a>
+    </div>
+    <div id="Relog">
+        <div class="clockdate">
+            <span id="time"></span>
+            <span id="date"></span>
+        </div>
+    </div>
+    <script>
+        function startTime() {
+            //declaramos las  variables que nos proporcionaran los datos como la hora, minutos etc.
+
+            var today = new Date(),
+                hours = today.getHours(),
+                minutes = today.getMinutes(),
+                seconds = today.getSeconds(),
+                date = today.getDate(),
+                day = today.getDay(),
+                month = today.getMonth();
+
+            //utilizaremos operadores ternarios esto nos ayudara a mostrar la hora solo del 1 al 12
+            hours = (hours == 0) ? 12 : hours;
+            hours = (hours > 12) ? hours - 12 : hours;
+
+            //pasaremos las horas y minutos a una funcion que crearemos mas adelante
+            hours = checkTime(hours);
+            minutes = checkTime(minutes);
+            seconds=checkTime(seconds);
+
+            //primero para los dias y meses crearemos un arreglo esto por que la funcion que nos debuelve
+            //los dias y meses nos los debuelbe en numero
+            var dia = ["Domingo", " Lunes", "Martes", "Miercoles", "Jueves", "viernes", "Sabado"],
+                mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            //haora solo imprimimos los datos
+            var hr = document.getElementById('time').innerHTML = hours + ":" + minutes+ ":" + seconds,
+                dt = document.getElementById('date').innerHTML = dia[day] + ", " + date + " De " + mes[month];
+
+            //esta funcion hara que nuestro escript se ejecute constantemente
+            var time = setTimeout(function() {
+                startTime();
+            }, 500);
+
+
+
+
+        }
+        //solo falta crear la funcion que nos diga si tine uno o dos dijitos
+        //esto para que si solo tiene uno le agrege u  cero a la izquierda
+        function checkTime(e) {
+            if (e < 10) {
+                e = "0" + e;
+            }
+            return e;
+        }
+    </script> 
+    
+
+
+
+
+
+</body>
+</html>

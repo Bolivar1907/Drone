@@ -1,0 +1,389 @@
+@import url("https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbi1NWVh0ckZMeGc1TmwtT2hNSGwwN2VkYkNjQXxBQ3Jtc0trZ1NQd3QybzlPeWNwVndiSnhhSDBTY3VJLXhaU1gxNDdaUkdlSmhjc2k2elJVR0hnbDZRaGZWYXFSWHJheWRYZEJoaUJNM3dOUVRXdFplT3VDWUpHdGVfM3hoNjE5aFU5bC11QVRtNWxHU1BtLVRVZw&q=https%3A%2F%2Fgithub.com%2Fymulenll%2Fcss-grid-template")
+
+*{
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    height: 100%;   
+}
+body{
+    background-color: #0a192f ;
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+
+}
+.contenedor >*{
+    box-shadow: beige;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    
+}
+/*---Nombre de la pagina----*/
+.nombre{
+    grid-area: nombre;
+    margin-top: -10px;
+    align-items: center;
+    flex-wrap:wrap;
+    
+    font-weight: 100px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccd6f6;
+    
+}
+/*-- play stop-- */ 
+.BGeneral{
+
+    grid-area: BGeneral;
+    margin:center;
+    height: 150px;
+    flex-wrap:wrap;
+    
+
+}
+
+
+
+.EncenApag{
+    grid-area: EncenApag;
+    margin:center;
+    height: 150px;
+    flex-wrap:wrap;
+    
+    
+
+}
+/*--video--*/
+
+div#video{
+    margin-left: 10px;
+    flex-wrap:wrap;
+    grid-area: video;
+    width:100%;
+    
+    
+}
+
+/*---Logo---*/
+.logo {
+    
+    grid-area: logo ;
+    height: 100px;
+    width: 150px;
+    
+}
+
+/*conteo de perritos */ 
+.conteo{
+    
+    align-items: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    grid-area: conteo;
+    margin:center;
+    flex-wrap:wrap;
+    
+    
+
+}
+
+/* boton Home*/
+
+.return{
+    flex-wrap:wrap;
+    grid-area: return;
+    
+
+}
+.btn-neon{
+    
+    margin: auto;
+    
+    padding: 5px 25px;
+    border-radius: 30px;
+    color: #ccd6f6;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.1s;
+    
+    
+}
+.btn-neon:hover{
+    background: #4b5052;
+    box-shadow: 0 0 10px #57cbff, 0 0 4px #57cbff, 0 0 80px #57cbff;
+    transition-delay: 1s;
+    border: 1px solid #fff;
+ }
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: -3px;
+    background: linear-gradient(90deg, transparent,#493a4360);
+    
+   
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+    
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#2d3235);
+    
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+   
+}
+#span2{
+    top: 100%;
+    right: 0;
+    width: 2px;
+    
+    background: linear-gradient(180deg,transparent,#263e49);
+    
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+    
+}
+#span4{
+    bottom: -10%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#303b41);
+    
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+    
+}
+/*relog*/
+
+div#Relog{
+    align-items: center;
+    flex-wrap:wrap;
+    margin: auto;
+    grid-area: relog;
+    
+    height: 100%;
+    
+  
+}
+span{
+    
+    
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Bellota', cursive;
+}
+span:nth-child(1){
+    
+    position: relative;
+    width: 170px;
+    line-height: 80px;
+    border-radius: 150px;
+    font-size: 40px;
+    box-shadow: -10px -10px 10px var(--shadowLg),
+    10px 10px 10px var(--shadow),
+    inset -10px -10px 10px var(--shadowLg),
+    inset 10px 10px 10px var(--shadow);
+    color: #6e92c7;
+    border: 5px solid transparent;
+}
+span:nth-child(2)
+{
+    float: inline-end;
+    
+    line-height: 10px;
+    font-size: 14px;
+    color: #6e92c7;
+}
+
+/*espacio en blanco */
+
+.blanco{
+    margin-left: 0px;
+    grid-area: blanco;
+
+    width: 100%;
+    
+}
+
+
+
+.contenedor{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "nombre"
+    "BGeneral"
+    "video"
+    "blanco"
+    "conteo"
+    "EncenApag"
+    "logo"
+    "relog"
+    "return"
+    ;
+
+}
+@media (min-width: 430px){
+    .contenedor{
+        grid-template-areas: 
+        "nombre nombre"
+        "BGeneral EncenApag"
+        "video video"
+        "conteo conteo"
+        "logo relog"
+        "return return"
+        
+        ;
+    }
+    div#relog{
+        display:flex;
+        align-items: flex-end;
+        width: 5%;
+        margin-left: 0px;
+        
+    }
+    .logo {
+        margin-left: 100px;
+    }
+    div#video{
+        
+        width:70%;
+        height: 70%;
+    }
+    .blanco{
+        width: 100%;
+        height: 1%;
+    }
+}
+@media (min-width: 600px){
+    .contenedor{
+        grid-template-areas: 
+        "nombre nombre nombre"
+        "BGeneral conteo EncenApag"
+        "video video video"
+        " blanco blanco blanco"
+        "logo return relog"
+        ;
+       
+    }
+    
+    .nombre{
+        margin-top: 50px;
+        width: 100%;
+        height: 50%;
+    }
+    
+    
+    div#video{
+        padding-top: -40%;
+        margin-top: auto;
+        margin-left: 150px;
+        margin: auto;
+        width:70%;
+        height: 150%;
+    }
+    .blanco{
+        width: 30%;
+        height: 150%;
+    }
+    .conteo{
+        margin-left: 50px;
+        margin-top: 0px;
+        height: 40px;
+
+    }
+    .logo {
+        margin-left: 0px;
+    }
+    div#relog{
+        display:flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 50px;
+        margin-left: 20px;
+        
+    }
+    
+}
+@media (min-width: 900px){
+    .contenedor{
+        grid-template: 
+        "nombre nombre nombre" 50px
+        "BGeneral video EncenApag" 480px
+        "conteo conteo conteo" 50px
+        " logo return relog "100px
+        " logo return relog " 100px
+        "blanco blanco blanco" 1px;
+        
+        
+    }
+    .nombre{
+        margin-top: 5px;
+        width: 100%;
+    }
+    
+    div#video{
+        margin-left: 150px;
+        margin: auto;
+        width:640px;
+        height: 480px;
+        
+    }
+    .conteo{
+        margin-left: 500px;
+        margin-top: -10px;
+        height: 50%;
+        width:15%;
+    }
+    .blanco{
+        width: 100%;
+        height: 1%;
+        
+    }
+    div#relog{
+        margin-top: -20px;
+        display:flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 50px;
+        margin-left: 20px;
+        
+    }
+    .logo{
+        margin-top: -30px;
+    }
+    .return{
+        margin-top: -20px;
+    }
+        
+}

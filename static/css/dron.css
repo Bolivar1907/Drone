@@ -1,0 +1,239 @@
+.{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background: #0a192fa;
+}
+
+.menu ul{
+    display: inline-flex;
+    margin: 50px
+    color: #fff;
+
+}
+
+.active{
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+
+}
+.active span{
+    display: block;
+    padding: 15px 30px;
+    }
+
+.logo img{
+
+    width: 90px;
+    margin-top: -19px;
+    margin-right: 48px
+}
+.active{
+    color: #19dafa !important;
+
+}
+
+.Camara{
+    top: 30px;
+    right: 1550px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+
+}
+
+.Camara span{
+display: block;
+padding: 8px 22px;
+}
+
+.Salir {
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+
+}
+
+.Salir span{
+display: block;
+padding: 8px 22px;
+}
+
+.Contacto{
+    top: 30px;
+    right: 1375px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+
+}
+
+.Contacto span{
+display: block;
+padding: 8px 22px;
+}
+
+
+
+
+
+.banner{
+width: 80%;
+height: 70%;
+top: 20%;
+left: 130px;
+position: absolute;
+color: #fff;
+}
+
+.app-text{
+width: 50%;
+float: left;
+text-align: justify;
+}
+
+.app-text h1{
+font-size: 43px;
+width: 650px;
+position: relative;
+margin-left: 40px;
+
+}
+
+.app-text p{
+text-align: justify;
+width: 650px;
+font-size: 15px;
+margin: 30px 0 30px 40px;
+line-height: 25px;
+color: #ccd6f6;
+
+}
+.app-picture{
+width:50%;
+float: right;
+}
+
+.app-picture img{
+
+width:100%;
+margin-top: -150px;
+padding-left: 50px;
+
+}
+
+
+
+
+.play-btn{
+
+    margin-left: 40px;
+    display: inline-flex;
+
+
+}
+.play-btn-inner{
+
+height:  50px;
+width: 50px;
+border: 2px solid transparent;
+transform: scale(var(--ggs,1));
+    border-radius: 50%;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    text-align: center;
+     transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px
+}
+.gg-play-button{
+padding: 18px 0;
+font-size: 15px;
+cursor: pointer;
+}
+small{
+margin: auto 20px;
+cursor: pointer;
+font-size: 12px;
+color: #19dafa;
+letter-spacing: 3px;
+}
+
+.quick-links{
+left: 0;
+bottom:0;
+position: absolute;
+background: linear-gradient(to right, #db1bf6, #19d7f8);
+
+
+}
+.quick-links ul{
+    display: inline-flex;
+    margin: 20px auto;
+    text-align: center;
+
+}
+.quick-links ul li{
+list-style: none;
+margin: 0 100px;
+cursor: pointer;
+}
+.quick-links ul li p{
+color: #fff;
+}
+
+.gg-share{
+left: 180px;
+top: 60px;
+}
+
+.gg-airplane{
+left: 480px;
+top: 50px;
+}
+
+.gg-bot{
+left: 800px;
+top: 35px;
+}
+
+.gg-facebook{
+left: 1050px;
+top: 25px;
+}
+
+
+.gg-instagram{
+left: 1350px;
+top: 8px;
+}
